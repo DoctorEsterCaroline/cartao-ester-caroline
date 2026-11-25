@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Cartão Dra Ester Caroline</title>
+<style>
+  :root { color-scheme: light; --brand: #5C3A2E; --brand-2: #7A4E3F; --accent: #F7D6DC; --icon: #FBE9ED; --link: #5C3A2E; --ground: #FDF7F8; --card: #ffffff; --ink: #3b2a25; --muted: #7a6661; --line: #f2e3e6; --wa: #128c4b; --on-brand: #ffffff; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: linear-gradient(rgba(253,247,248,.7), rgba(253,247,248,.7)), url(bg.png) center / cover fixed no-repeat var(--ground); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  .top { background: linear-gradient(155deg, var(--brand) 35%, var(--brand-2)); height: 170px; display: flex; justify-content: center; align-items: flex-start; padding: 22px 16px 0; border-bottom: 5px solid var(--accent); border-radius: 0 0 50% 50% / 0 0 46px 46px; color: #fff; }
+  .top .tagline { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); font-weight: 700; align-self: center; margin-top: -6px; }
+  .wrap { max-width: 440px; margin: 0 auto; padding: 0 16px 28px; display: grid; gap: 18px; }
+  .id { text-align: center; margin-top: -78px; display: grid; gap: 4px; justify-items: center; }
+  .avatar { width: 132px; height: 132px; border-radius: 50%; background: var(--card); border: 5px solid var(--accent); box-shadow: 0 8px 24px rgba(0,0,0,.2); overflow: hidden; margin-bottom: 10px; }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -.4px; color: var(--brand); text-wrap: balance; }
+  .role { font-size: 16px; font-weight: 600; }
+  .tag { font-size: 14px; color: var(--muted); }
+  .verified { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 700; color: var(--brand); background: #F7E3E8; border-radius: 999px; padding: 3px 10px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 10px; padding: 6px 12px 0; }
+  .ico { display: grid; justify-items: center; gap: 8px; text-decoration: none; color: var(--ink); font-size: 14.5px; font-weight: 600; background: none; border: 0; font-family: inherit; cursor: pointer; padding: 0; }
+  .ico span.c { width: 76px; height: 76px; border-radius: 50%; background: var(--brand); color: var(--icon); display: grid; place-items: center; box-shadow: 0 6px 16px rgba(0,0,0,.18); transition: transform .15s ease; }
+  .ico.wa span.c { background: var(--wa); color: var(--on-brand); }
+  .ico svg { width: 34px; height: 34px; }
+  .ico img.logo { width: 44px; height: 44px; object-fit: contain; display: block; }
+  .ico:active span.c { transform: scale(.92); }
+  .ico:focus-visible { outline: 3px solid var(--link); outline-offset: 6px; border-radius: 12px; }
+  .hint { text-align: center; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .num { text-align: center; font-size: 17px; font-weight: 700; user-select: all; font-variant-numeric: tabular-nums; }
+  .qr { background: var(--card); border-radius: 18px; padding: 12px 14px; box-shadow: 0 3px 14px rgba(0,0,0,.06); display: grid; justify-items: center; gap: 8px; width: fit-content; justify-self: center; }
+  .qr #qrcode { padding: 8px; background: #fff; border-radius: 12px; line-height: 0; }
+  .qr p { font-size: 14px; color: var(--muted); text-align: center; }
+  .panel { background: var(--card); border-radius: 18px; padding: 18px 16px; box-shadow: 0 3px 14px rgba(0,0,0,.06); display: grid; gap: 10px; }
+  h2 { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: #3B1F16; font-weight: 800; }
+  ul { list-style: none; padding: 0; display: grid; }
+  li { display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; color: #3B1F16; font-weight: 700; }
+  li:first-child { border-top: 0; }
+  li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #000; box-shadow: 0 0 0 1px rgba(0,0,0,.18); margin-top: 7px; flex: none; }
+  .addr { text-align: center; font-size: 14px; color: var(--muted); }
+  .addr a { color: var(--link); font-weight: 600; }
+  footer { text-align: center; font-size: 12.5px; color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { .ico span.c { transition: none; } }
+</style></head><body>
+<div class="top"><span class="tagline">Facetas &amp; Implantes</span></div>
+<main class="wrap">
+  <section class="id">
+    <div class="avatar"><img src="photo.png" alt="Dra. Ester Caroline"></div>
+    <h1>Dra. Ester Caroline</h1>
+    <p class="role">Dentista · Especialista em lentes de resina e implante</p>
+    <p class="tag">Facetas de Resina · Diadema, SP</p>
+    <span class="verified">Perfil verificado no Instagram</span>
+  </section>
+  <nav class="grid" aria-label="Contato">
+    <a class="ico wa" href="https://wa.me/5511949655170?text=Ol%C3%A1%20Dra.%20Ester%20Caroline%2C%20peguei%20seu%20contato%20pelo%20cart%C3%A3o%20virtual%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><span class="c"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-1 1.5-.9 2.4.1 1 .7 2 1.4 2.9 1.3 1.7 2.8 2.8 4.8 3.4.6.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.2.2-.5.2-1 .1-1.2 0-.1-.2-.2-.4-.3z"/></svg></span>WhatsApp</a>
+    <a class="ico" href="https://www.instagram.com/draestercaroline/" target="_blank" rel="noopener"><span class="c"><img class="logo" src="icon-instagram.png" alt=""></span>Instagram</a>
+    <a class="ico" href="https://www.waze.com/ul?q=Rua%20Guarani%2C%20734%2C%20Diadema%2C%20SP&amp;navigate=yes" target="_blank" rel="noopener"><span class="c"><img class="logo" src="icon-waze.png" alt=""></span>Localização</a>
+    <button class="ico" id="copiar" type="button"><span class="c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></span><span id="copiar-txt">Copiar número</span></button>
+  </nav>
+  <p class="hint">Toque nos ícones para acessar</p>
+  <p class="num" id="numero">(11) 94965-5170</p>
+  <section class="qr">
+    <img src="qr.png" alt="QR code" style="width:160px;height:160px;display:block;border:3px solid #5C3A2E;border-radius:10px;padding:4px;background:#fff;box-sizing:content-box">
+    <p>Escaneie para abrir o cartão virtual</p>
+  </section>
+  <section class="panel">
+    <h2>Especialidades</h2>
+    <ul><li>Lentes de resina (facetas)</li><li>Implantes dentários</li><li>Ortodontia</li><li>Atendimento em Diadema, SP</li></ul>
+  </section>
+  <p class="addr">Rua Guarani, 734 · Diadema, SP</p>
+  <footer>Dra. Ester Caroline · Facetas de Resina</footer>
+</main>
+<script>
+  var b=document.getElementById('copiar'),t=document.getElementById('copiar-txt'),n=document.getElementById('numero');
+  b.addEventListener('click',function(){
+    function ok(){t.textContent='Número copiado';setTimeout(function(){t.textContent='Copiar número';},2000);}
+    function sel(){var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);t.textContent='Número selecionado';}
+    try{navigator.clipboard.writeText('+5511949655170').then(ok,sel);}catch(e){sel();}
+  });
+</script>
+
+</body></html>
