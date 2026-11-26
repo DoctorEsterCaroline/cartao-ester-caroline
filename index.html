@@ -4,17 +4,17 @@
   :root { color-scheme: light; --brand: #5C3A2E; --brand-2: #7A4E3F; --accent: #F7D6DC; --icon: #FBE9ED; --link: #5C3A2E; --ground: #FDF7F8; --card: #ffffff; --ink: #3b2a25; --muted: #7a6661; --line: #f2e3e6; --wa: #128c4b; --on-brand: #ffffff; --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   * { box-sizing: border-box; margin: 0; }
   body { background: linear-gradient(rgba(253,247,248,.7), rgba(253,247,248,.7)), url(bg.png) center / cover fixed no-repeat var(--ground); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
-  .top { background: linear-gradient(155deg, var(--brand) 35%, var(--brand-2)); height: 170px; display: flex; justify-content: center; align-items: flex-start; padding: 22px 16px 0; border-bottom: 5px solid var(--accent); border-radius: 0 0 50% 50% / 0 0 46px 46px; color: #fff; }
-  .top .tagline { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); font-weight: 700; align-self: center; margin-top: -6px; }
-  .wrap { max-width: 440px; margin: 0 auto; padding: 0 16px 28px; display: grid; gap: 18px; }
-  .id { text-align: center; margin-top: -78px; display: grid; gap: 4px; justify-items: center; }
-  .avatar { width: 132px; height: 132px; border-radius: 50%; background: var(--card); border: 5px solid var(--accent); box-shadow: 0 8px 24px rgba(0,0,0,.2); overflow: hidden; margin-bottom: 10px; }
+  .top { background: linear-gradient(155deg, var(--brand) 35%, var(--brand-2)); height: 150px; display: flex; justify-content: center; align-items: flex-start; padding: 22px 16px 0; border-bottom: 5px solid var(--accent); border-radius: 0 0 50% 50% / 0 0 46px 46px; color: #fff; }
+  .top .tagline { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); font-weight: 700; align-self: flex-start; margin-top: 18px; }
+  .wrap { max-width: 440px; margin: 0 auto; padding: 0 16px 24px; display: grid; gap: 14px; }
+  .id { text-align: center; margin-top: -66px; display: grid; gap: 4px; justify-items: center; }
+  .avatar { width: 132px; height: 132px; border-radius: 50%; background: var(--card); border: 5px solid var(--accent); box-shadow: 0 8px 24px rgba(0,0,0,.2); overflow: hidden; margin-bottom: 4px; }
   .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
   h1 { font-size: 28px; font-weight: 800; letter-spacing: -.4px; color: var(--brand); text-wrap: balance; }
   .role { font-size: 16px; font-weight: 600; }
   .tag { font-size: 14px; color: var(--muted); }
   .verified { display: inline-block; margin-top: 6px; font-size: 12px; font-weight: 700; color: var(--brand); background: #F7E3E8; border-radius: 999px; padding: 3px 10px; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 10px; padding: 6px 12px 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 10px; padding: 6px 12px 0; }
   .ico { display: grid; justify-items: center; gap: 8px; text-decoration: none; color: var(--ink); font-size: 14.5px; font-weight: 600; background: none; border: 0; font-family: inherit; cursor: pointer; padding: 0; }
   .ico span.c { width: 76px; height: 76px; border-radius: 50%; background: var(--brand); color: var(--icon); display: grid; place-items: center; box-shadow: 0 6px 16px rgba(0,0,0,.18); transition: transform .15s ease; }
   .ico.wa span.c { background: var(--wa); color: var(--on-brand); }
@@ -30,7 +30,7 @@
   .panel { background: var(--card); border-radius: 18px; padding: 18px 16px; box-shadow: 0 3px 14px rgba(0,0,0,.06); display: grid; gap: 10px; }
   h2 { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: #3B1F16; font-weight: 800; }
   ul { list-style: none; padding: 0; display: grid; }
-  li { display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; color: #3B1F16; font-weight: 700; }
+  li { display: flex; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 15px; color: #3B1F16; font-weight: 700; }
   li:first-child { border-top: 0; }
   li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #000; box-shadow: 0 0 0 1px rgba(0,0,0,.18); margin-top: 7px; flex: none; }
   .addr { text-align: center; font-size: 14px; color: var(--muted); }
